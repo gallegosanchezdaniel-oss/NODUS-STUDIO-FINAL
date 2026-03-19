@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #FFFFFF;
+  --color-surface: #F6F7F4;
+  --color-surface-alt: #EEF2EC;
+  --color-text-primary: #111111;
+  --color-text-secondary: #4F5A52;
+  --color-accent: #1F3D2B;
+  --color-accent-hover: #2B523D;
+  --color-line: #DCE3DC;
+  --color-footer-bg: #101713;
+  --color-footer-text: #F3F5F3;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --radius-nodus: 20px;
+  --radius-card: 18px;
+  
+  --shadow-nodus: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+.hero-overlay {
+  background: rgba(8, 14, 10, 0.42);
+}
+
+.video-hero-overlay {
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.glass-nav {
+  @apply backdrop-blur-md bg-white/80 border-b border-line;
+}
+
